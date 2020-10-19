@@ -1,3 +1,5 @@
+live: http://petrstepvn.github.io/cw2-stone-calculator-v2
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
