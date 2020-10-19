@@ -1,0 +1,18 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["src/data/*.js"],
+      "options": {
+      }
+    },
+    {
+      "files": ["src/data/Infected.js"],
+      "options": {
+        "printWidth": 220
+      }
+    }
+  ]
+}

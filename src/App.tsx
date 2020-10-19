@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import { LanguageProvider } from './provider/Language';
+import ThemeProvider from './provider/Theme';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Container } from '@material-ui/core';
+import Header from './components/Header';
 
-function App() {
+import Test from './components/StoneCalculator';
+import InfectedExperienceCalculator from './components/InfectedExperienceCalculator';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LanguageProvider>
+      <ThemeProvider>
+        <CssBaseline />
+        <Header />
+        {/* <Container maxWidth="xs"> */}
+        {/* <Test /> */}
+        {/* <InfectedExperienceCalculator /> */}
+        {/* </Container> */}
+      </ThemeProvider>
+    </LanguageProvider>
   );
-}
+};
 
 export default App;
