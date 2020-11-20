@@ -20,6 +20,24 @@
 		"ring": "Blessed Ring"
 	},
 
+	"header": {
+		"stone" : "Stone", 
+		"infectedXP" : "Infected XP"
+	},
+
+	"infectedExpCalculator": {
+		"infectedStoneLevelRange": "Infected Stone Level Range",
+		"levels": "Levels",
+		"fragments": "Fragments",
+		"reqXP": "REQ XP",
+		"info": "Fragment Portal has 2000 monsters on average. 1 monster = 1 infected stone XP.",
+		"listItem": "Experience gain can be increased through:",
+		"listItemPrimary": "Prophecy Infected Knowledge I · II · III",
+		"listItemPrimary2": "Celia Event - every Sunday",
+		"listItemSecondary": "The next 5 000 · 10 000 · 20 000 monsters you kill will reward you with twice the amount of Infected Stone experience.",
+		"listItemSecondary2": "Infected Stones receive 100% more experience."
+	},
+
 	"note": {
 		"haste": "Movement Speed becomes Speed of Light when the Stone is Improved, Polished...Exotic."
 	},
@@ -31,8 +49,10 @@
 		"equipmentType": "Equipment Type",
 		"eqGrade": "Equipment Grade",
 		"selectAStone": "Select a stone",
+		"refirementLevel": "Refirement Level",
 		"stoneRefinementLevel": "Stone Refinement Level",
 		"stoneGrade": "Stone Grade",
+		"empower" : "Empower",
 		"exoEmpower": "Exo Empower",
 		"infectedAttribute": "Infected Attribute",
 		"infectedLevel": "Infected Level"

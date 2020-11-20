@@ -20,29 +20,49 @@
 		"ring": "Gesegneter Ring"
 	},
 
-	"note": {
-		"haste": "TRANSLATE / Movement Speed becomes Speed of Light when the Stone is Improved, Polished...Exotic."
+	"header": {
+		"stone" : "Steine", 
+		"infectedXP" : "Infizierte XP"
 	},
 
-	"levelSliderNote": "TRANSLATE / Refinement Level can be changed only when Stone Grade is Normal.",
+	"infectedExpCalculator": {
+		"infectedStoneLevelRange": "Infizierte Steinlevel",
+		"levels": "Levels",
+		"fragments": "Fragment Portale",
+		"reqXP": "Anforderung Exp",
+		"info": "Fragment Portal hat durchschnittlich 2000 Monster. 1 Monster = 1 infizierter Stein XP.",
+		"listItem": "Der Erfahrungsgewinn kann gesteigert werden durch:",
+		"listItemPrimary": "Prophecy Infiziertes Wissen I · II · III",
+		"listItemPrimary2": "Celia Event - jeden Sonntag",
+		"listItemSecondary": "Die nächsten 5 000 · 10 000 · 20 000 Monster, die du tötest, belohnen dich mit der doppelten Menge an Erfahrung mit infizierten Steinen.",
+		"listItemSecondary2": "Infizierte Steine ​​erhalten 100% mehr Erfahrung."
+	},
+
+	"note": {
+		"haste": "Bewegungsgeschwindigkeit wird zu Lichtgeschwindigkeit, wenn der Stein verbessert ... exotisch ist."
+	},
+
+	"levelSliderNote": "Die Verfeinerung Stufe kann nur geändert werden, wenn der Steingrad normal ist.",
 
 	"label": {
-		"infected": "Infected",
-		"equipmentType": "Equipment Type",
-		"eqGrade": "Equipment Grade",
-		"selectAStone": "Select a stone",
-		"stoneRefinementLevel": "Stone Refinement Level",
-		"stoneGrade": "Stone Grade",
-		"exoEmpower": "Exo Empower",
-		"infectedAttribute": "Infected Attribute",
-		"infectedLevel": "Infected Level"
+		"infected": "Infiziert",
+		"equipmentType": "Ausstattungstyp",
+		"eqGrade": "Ausrüstungsgrad",
+		"selectAStone": "Wähle einen Stein",
+		"refirementLevel": "Verfeinerung Phase",
+		"stoneRefinementLevel": "Steinverfeinerungsstufe",
+		"stoneGrade": "Stein Grad",
+		"empower" : "Verstärkung",
+		"exoEmpower": "Exo Verstärkung",
+		"infectedAttribute": "Infiziertes Attribut",
+		"infectedLevel": "Infiziertes Level"
 	},
 
 	"attributeGroup" : {
-		"1dmgAll": "Damage",
-		"2dmgSpecial": "Damage Speciality",
-		"3def": "Defense",
-		"4trash": "Trash"
+		"1dmgAll": "Beschädigung",
+		"2dmgSpecial": "Schaden Spezialität",
+		"3def": "Verteidigung",
+		"4trash": "Müll"
 	},
 
 	"stone": {
