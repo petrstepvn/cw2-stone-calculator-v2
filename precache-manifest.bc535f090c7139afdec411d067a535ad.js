@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7a14bbbff90ceb815a4020187c33f81",
+    "revision": "052bf554f2273c2492ca1375f4a19631",
     "url": "/cw2-stone-calculator-v2/index.html"
   },
   {
-    "revision": "8ce4eacce9fce592a132",
+    "revision": "cdb76d4732706d077949",
     "url": "/cw2-stone-calculator-v2/static/css/main.fb5e79b7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cw2-stone-calculator-v2/static/js/2.226b17ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ce4eacce9fce592a132",
-    "url": "/cw2-stone-calculator-v2/static/js/main.81bc54ad.chunk.js"
+    "revision": "cdb76d4732706d077949",
+    "url": "/cw2-stone-calculator-v2/static/js/main.7bea88dc.chunk.js"
   },
   {
     "revision": "f8411aa79d089d77c362",
