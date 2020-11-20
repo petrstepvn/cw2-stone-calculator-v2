@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   AppBar,
@@ -12,6 +12,7 @@ import {
 import LanguageSelector from './LanguageSelector';
 import Test from './StoneCalculator';
 import InfectedExperienceCalculator from './InfectedExperienceCalculator';
+import { LanguageContext } from '../provider/Language';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
   const [value, setValue] = useState(0);
-
+  const [language] = useContext(LanguageContext);
+  
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -45,8 +47,8 @@ const Header = () => {
             <LanguageSelector />
           </Toolbar>
           <Tabs centered value={value} onChange={handleChange}>
-            <Tab label="Stone" />
-            <Tab label="Infected XP" />
+            <Tab label={language.header['stone']} />
+            <Tab label={language.header['infectedXP']} />
           </Tabs>
         </Container>
       </AppBar>
