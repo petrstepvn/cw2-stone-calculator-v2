@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cw2-stone-calculator-v2/precache-manifest.9a41a8f660eb9d6fffb49375dc3647d8.js"
+  "/cw2-stone-calculator-v2/precache-manifest.7b858469fdaf06a60be82ab3b2d8d195.js"
 );
 
 self.addEventListener('message', (event) => {

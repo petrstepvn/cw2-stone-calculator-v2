@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23cc209aabc357e06927e1a1bf180096",
+    "revision": "a7a14bbbff90ceb815a4020187c33f81",
     "url": "/cw2-stone-calculator-v2/index.html"
   },
   {
-    "revision": "b0216a870a20f5f2e97b",
+    "revision": "8ce4eacce9fce592a132",
     "url": "/cw2-stone-calculator-v2/static/css/main.fb5e79b7.chunk.css"
   },
   {
-    "revision": "c2f7bd62a2d6cbf87f97",
-    "url": "/cw2-stone-calculator-v2/static/js/2.f4c10768.chunk.js"
+    "revision": "18040e3b671639e75395",
+    "url": "/cw2-stone-calculator-v2/static/js/2.226b17ca.chunk.js"
   },
   {
     "revision": "89b0379e7bcda1a468d8b0343aeb4e53",
-    "url": "/cw2-stone-calculator-v2/static/js/2.f4c10768.chunk.js.LICENSE.txt"
+    "url": "/cw2-stone-calculator-v2/static/js/2.226b17ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0216a870a20f5f2e97b",
-    "url": "/cw2-stone-calculator-v2/static/js/main.778b8b5e.chunk.js"
+    "revision": "8ce4eacce9fce592a132",
+    "url": "/cw2-stone-calculator-v2/static/js/main.81bc54ad.chunk.js"
   },
   {
     "revision": "f8411aa79d089d77c362",
