@@ -132,21 +132,21 @@ const Results = ({ inputData, result }) => {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>Refinement Level +{stoneRefinementLevel}</TableCell>
+              <TableCell>{language.label['refirementLevel']} +{stoneRefinementLevel}</TableCell>
               <TableCell align="right">
                 +{result.primary.refinementLevel}
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Equipment Grade ({language.grade[eqGrade]})</TableCell>
+              <TableCell>{language.label['eqGrade']} ({language.grade[eqGrade]})</TableCell>
               <TableCell align="right">+{result.primary.eqGrade}</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Stone Grade ({language.grade[stoneGrade]})</TableCell>
+              <TableCell>{language.label['stoneGrade']} ({language.grade[stoneGrade]})</TableCell>
               <TableCell align="right">+{result.primary.stoneGrade}</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Empower</TableCell>
+              <TableCell>{language.label['empower']} </TableCell>
               <TableCell align="right">+{result.primary.empower}</TableCell>
             </TableRow>
           </TableBody>
@@ -167,27 +167,27 @@ const Results = ({ inputData, result }) => {
             </TableHead>
             <TableBody>
               <TableRow>
-                <TableCell>Infected Level {infectedLevel}</TableCell>
+                <TableCell>{language.label['infectedLevel']} {infectedLevel}</TableCell>
                 <TableCell align="right">
                   +{result.infected.infectedLevel}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  Equipment Grade ({language.grade[eqGrade]})
+                  {language.label['eqGrade']} ({language.grade[eqGrade]})
                 </TableCell>
                 <TableCell align="right">+{result.infected.eqGrade}</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  Stone Grade ({language.grade[stoneGrade]})
+                  {language.label['stoneGrade']} ({language.grade[stoneGrade]})
                 </TableCell>
                 <TableCell align="right">
                   +{result.infected.stoneGrade}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Empower</TableCell>
+                <TableCell>{language.label['empower']}</TableCell>
                 <TableCell align="right">+{result.infected.empower}</TableCell>
               </TableRow>
             </TableBody>
