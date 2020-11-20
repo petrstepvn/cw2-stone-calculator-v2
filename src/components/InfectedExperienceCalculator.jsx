@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { useEffect, useState, useContext } from 'react';
+import { LanguageContext } from '../provider/Language';
 import {
   Typography,
   Slider,
   Box,
-  Grid,
   Paper,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
-  ListItem,
   ListItemText,
   List,
   ListSubheader,
@@ -33,6 +31,7 @@ const InfectedExperienceCalculator = () => {
   const [value, setValue] = useState([5, 20]);
   const [experience, setExperience] = useState(['']);
   const [fragments, setFragments] = useState([]);
+  const [language] = useContext(LanguageContext);
 
   useEffect(() => {
     setExperience([
@@ -58,7 +57,7 @@ const InfectedExperienceCalculator = () => {
       <Paper variant="outlined">
         <Box p={2}>
           <Typography color="textSecondary" gutterBottom>
-            Infected Stone Level range:{' '}
+          {language.infectedExpCalculator['infectedStoneLevelRange']}{' '}
             <Typography
               component="span"
               color="textPrimary"
@@ -78,9 +77,9 @@ const InfectedExperienceCalculator = () => {
         <Table size="small">
           <TableHead>
             <TableRow>
-              <TableCell align="left">LEVELS</TableCell>
-              <TableCell align="right">FRAGMENTS</TableCell>
-              <TableCell align="right">REQ XP</TableCell>
+              <TableCell align="left">{language.infectedExpCalculator['levels']}</TableCell>
+              <TableCell align="right">{language.infectedExpCalculator['fragments']}</TableCell>
+              <TableCell align="right">{language.infectedExpCalculator['reqXP']}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -102,8 +101,7 @@ const InfectedExperienceCalculator = () => {
           </TableBody>
         </Table>
         <Typography style={{ padding: '1em' }}>
-          Fragment Portal has 2000 monsters on average. <br />1 monster = 1
-          infected stone XP.
+        {language.infectedExpCalculator['info']}
         </Typography>
       </Paper>
       <Paper variant="outlined" style={{ marginTop: '1.5rem' }}>
@@ -111,18 +109,18 @@ const InfectedExperienceCalculator = () => {
           <List
             subheader={
               <ListSubheader disableGutters>
-                Experience gain can be increased through:
+                {language.infectedExpCalculator['listItem']}
               </ListSubheader>
             }
           >
             {/* <ListItem> */}
             <ListItemText
-              primary="Prophecy Infected Knowledge I · II · III"
-              secondary="The next 5 000 · 10 000 · 20 000 monsters you kill will reward you with twice the amount of Infected Stone experience."
+              primary={language.infectedExpCalculator['listItemPrimary']}
+              secondary={language.infectedExpCalculator['listItemSecondary']}
             />
             <ListItemText
-              primary="Celia Event - every Sunday"
-              secondary="Infected Stones receive 100% more experience."
+              primary={language.infectedExpCalculator['listItemPrimary2']}
+              secondary={language.infectedExpCalculator['listItemSecondary2']}
             />
             {/* </ListItem> */}
           </List>
