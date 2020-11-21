@@ -9,7 +9,7 @@
       }
     },
     {
-      "files": ["src/data/Infected.js"],
+      "files": ["src/data/Infected.js", "src/data/Synthesis.js"],
       "options": {
         "printWidth": 220
       }

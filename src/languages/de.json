@@ -22,7 +22,8 @@
 
 	"header": {
 		"stone" : "Steine", 
-		"infectedXP" : "Infizierte XP"
+		"infectedXP" : "Infizierte XP",
+		"synthesis" : "Synthese"
 	},
 
 	"infectedExpCalculator": {
