@@ -70,6 +70,14 @@ const InfectedAttributePicker = ({
     if (selectedStoneIsEmpower) {
       setGroups(Infected.sort(compare));
       setFilteredInfected(Infected);
+    } else {
+      const groupArray = filteredInfected.map((x) => x.group);
+      const groupSet = new Set(groupArray);
+      const uniqueGroups = [...groupSet];
+      setGroups(uniqueGroups);
+      setFilteredInfected(
+        Infected.filter((inf) => inf.eqType.includes(eqType))
+      );
     }
   }, [selectedStoneIsEmpower]);
 
