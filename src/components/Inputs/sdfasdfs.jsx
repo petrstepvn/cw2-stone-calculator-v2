@@ -57,15 +57,14 @@ const InfectedAttributePicker = ({
   eqType,
   selectedStoneIsEmpower = false,
   isSynthesis = false,
-  customPropName = 'selectedInfected',
-  customLabel = 'infectedAttribute',
-  customIndex = 0,
 }) => {
   const attributesData = isSynthesis ? Synthesis : Infected;
   const [filteredInfected, setFilteredInfected] = useState(attributesData);
   const [groups, setGroups] = useState(['']);
   const [language] = useContext(LanguageContext);
   const classes = useStyles();
+
+  console.log(attributesData);
 
   useEffect(() => {
     setFilteredInfected(
@@ -99,22 +98,22 @@ const InfectedAttributePicker = ({
     dispatch({
       type: 'selectedInfected',
       payload: {
-        [customPropName]: filteredInfected[customIndex],
+        selectedInfected: filteredInfected[0],
       },
     });
   }, [filteredInfected, dispatch]);
 
   return (
     <FormControl fullWidth variant="outlined">
-      <InputLabel>{language.label[customLabel]}</InputLabel>
+      <InputLabel>{language.label.infectedAttribute}</InputLabel>
       <Select
-        label={language.label[customLabel]}
+        label={language.label.infectedAttribute}
         value={selectedInfected}
         onChange={(e) =>
           dispatch({
             type: 'selectedInfected',
             payload: {
-              [customPropName]: e.target.value,
+              selectedInfected: e.target.value,
             },
           })
         }

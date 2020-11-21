@@ -96,6 +96,7 @@ const stateConfig = {
   },
   infected: true,
   selectedInfected: {
+    attribute: '',
     base: 0,
     stoneGrade: 0,
     multEq: 0,

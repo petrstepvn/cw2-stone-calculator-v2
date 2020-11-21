@@ -13,6 +13,7 @@ import LanguageSelector from './LanguageSelector';
 import Test from './StoneCalculator';
 import InfectedExperienceCalculator from './InfectedExperienceCalculator';
 import { LanguageContext } from '../provider/Language';
+import StoneOfSynthesis from './StoneOfSynthesis';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(2);
   const [language] = useContext(LanguageContext);
-  
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -46,16 +47,19 @@ const Header = () => {
             </Typography>
             <LanguageSelector />
           </Toolbar>
-          <Tabs centered value={value} onChange={handleChange}>
-            <Tab label={language.header['stone']} />
-            <Tab label={language.header['infectedXP']} />
-          </Tabs>
         </Container>
+
+        <Tabs centered value={value} onChange={handleChange}>
+          <Tab label={language.header['stone']} />
+          <Tab label={language.header['infectedXP']} />
+          <Tab label={language.header['synthesis']} />
+        </Tabs>
       </AppBar>
       <Container disableGutters maxWidth="xs">
         <Box p={2}>
           {value === 0 && <Test />}
           {value === 1 && <InfectedExperienceCalculator />}
+          {value === 2 && <StoneOfSynthesis />}
         </Box>
       </Container>
     </>

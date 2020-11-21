@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { EqType } from '../../data';
+import { EqTypes } from '../../data';
 import { LanguageContext } from '../../provider/Language';
 import {
   FormControl,
@@ -11,8 +11,10 @@ import {
   ListItemText,
 } from '@material-ui/core';
 
-const EquipmentPicker = ({ eqType, dispatch }) => {
+const EquipmentPicker = ({ eqType, dispatch, types }) => {
   const [language] = useContext(LanguageContext);
+
+  const EquipmentTypes = types ? types : EqTypes;
 
   return (
     <FormControl fullWidth variant="outlined">
@@ -24,7 +26,7 @@ const EquipmentPicker = ({ eqType, dispatch }) => {
           dispatch({ type: 'eqType', payload: { eqType: e.target.value } })
         }
       >
-        {EqType.map((eqt) => (
+        {EquipmentTypes.map((eqt) => (
           <MenuItem value={eqt} key={eqt} disableGutters>
             <ListItem
               component="div"

@@ -8,3 +8,7 @@ export const useCountRenders = () => {
   const renders = useRef(0);
   console.log('renders: ', renders.current++);
 };
+
+export const calculateTotal = (arr) => {
+  return arr.reduce((total, current) => total + current)
+}
