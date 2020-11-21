@@ -352,8 +352,10 @@ export default [
     multEq: 1,
     multStone: 3,
   },
+  /* 
   {
     id: 150,
     name: 'synthesis',
-  },
+  }, 
+  */
 ];
