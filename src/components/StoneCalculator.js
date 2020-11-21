@@ -111,8 +111,6 @@ const StoneCalculator = () => {
       : stateConfig
   );
 
-  console.log(localStorage.getItem('state') ? 'ok' : 'nope');
-
   const [result, setResult] = useState({
     primary: {
       refinementLevel: 0,
