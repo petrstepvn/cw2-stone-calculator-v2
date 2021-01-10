@@ -1,4 +1,5 @@
 {
+	"selectedLanguage": "en",
 	"grade": {
 		"0": "None",
 		"1": "Improved",
@@ -21,8 +22,19 @@
 	},
 
 	"header": {
-		"stone" : "Stone", 
-		"infectedXP" : "Infected XP"
+		"stone" : {
+			"short": "Stone",
+			"long": "Stone Calculator"
+		}, 		
+		"infectedXP" : {
+			"short": "Infected XP",
+			"long": "Infected Experience Calculator"
+		}
+	},
+
+	"notification": {
+		"title": "Greetings, Gamer!",
+		"body": "We have pre-filled some data for you to demo our calculator. Click on the cog icon to open settings for specific stone slot."
 	},
 
 	"infectedExpCalculator": {

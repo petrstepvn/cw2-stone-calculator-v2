@@ -1,6 +1,10 @@
+:root {
+	--color-background: #1D1F29;
+}
+
 body {
 	padding: 3rem;
-	background: #222;
+	background: var(--color-background);
 }
 
 /* @import '~antd/dist/antd.css'; */

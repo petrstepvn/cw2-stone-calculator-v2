@@ -1,4 +1,5 @@
 {
+	"selectedLanguage": "de",
 	"grade": {
 		"0": "Keiner",
 		"1": "Verbessert",
@@ -19,10 +20,21 @@
 		"belt": "Gürtel",
 		"ring": "Gesegneter Ring"
 	},
-
+	
 	"header": {
-		"stone" : "Steine", 
-		"infectedXP" : "Infizierte XP"
+		"stone" : {
+			"short": "Steine",
+			"long": "Steine Kalkulator"
+		}, 		
+		"infectedXP" : {
+			"short": "Infizierte XP",
+			"long": "Infizierte Erfahrung Kalkulator"
+		}
+	},
+
+	"notification": {
+		"title": "TRANSLATE / Greetings, Gamer!",
+		"body": "TRANSLATE / We have pre-filled some data for you to demo our calculator. Click on the cog icon to open settings for specific stone slot."
 	},
 
 	"infectedExpCalculator": {

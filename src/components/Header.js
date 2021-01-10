@@ -13,11 +13,12 @@ import LanguageSelector from './LanguageSelector';
 import Test from './StoneCalculator';
 import InfectedExperienceCalculator from './InfectedExperienceCalculator';
 import { LanguageContext } from '../provider/Language';
+import Nav from './Nav';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: '1rem',
+    // marginBottom: '1rem',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -38,7 +39,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="static" className={classes.root}>
+      {/* <AppBar position="static" className={classes.root}>
         <Container maxWidth="xs">
           <Toolbar>
             <Typography variant="h6" className={classes.title}>
@@ -51,13 +52,14 @@ const Header = () => {
             <Tab label={language.header['infectedXP']} />
           </Tabs>
         </Container>
-      </AppBar>
-      <Container disableGutters maxWidth="xs">
+      </AppBar> */}
+      {/* <Nav/> */}
+      {/* <Container disableGutters maxWidth="xs">
         <Box p={2}>
           {value === 0 && <Test />}
           {value === 1 && <InfectedExperienceCalculator />}
         </Box>
-      </Container>
+      </Container> */}
     </>
   );
 };

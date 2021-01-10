@@ -177,6 +177,7 @@ const StoneCalculator = () => {
           ? selectedInfected.multEq * 15
           : 0),
     });
+    // eslint-disable-next-line
   }, [state]);
 
   return (

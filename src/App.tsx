@@ -3,22 +3,17 @@ import React from 'react';
 import { LanguageProvider } from './provider/Language';
 import ThemeProvider from './provider/Theme';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { Container } from '@material-ui/core';
 import Header from './components/Header';
+import Nav from './components/Nav';
 
-import Test from './components/StoneCalculator';
-import InfectedExperienceCalculator from './components/InfectedExperienceCalculator';
 
 const App = () => {
   return (
     <LanguageProvider>
       <ThemeProvider>
         <CssBaseline />
-        <Header />
-        {/* <Container maxWidth="xs"> */}
-        {/* <Test /> */}
-        {/* <InfectedExperienceCalculator /> */}
-        {/* </Container> */}
+        {/* <Header /> */}
+        <Nav/>
       </ThemeProvider>
     </LanguageProvider>
   );

@@ -25,7 +25,7 @@ const StonePicker = ({ selectedStone, dispatch, eqType, infected }) => {
         selectedStone: filteredStones[0],
       },
     });
-  }, [filteredStones]);
+  }, [filteredStones, dispatch]);
 
   return (
     <FormControl fullWidth variant="outlined">
