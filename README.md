@@ -1,5 +1,5 @@
 # Attribute calculator for a game
-Calculate Stone Attributes and Infected Experience for [Celestial World 2.0](https://celestial-world.com/).
+Calculate Stone Attributes and Infected Experience for [Celestial World 2.0](https://celestial-world.to/).
 
 > live: http://petrstepvn.github.io/cw2-stone-calculator-v2
 
